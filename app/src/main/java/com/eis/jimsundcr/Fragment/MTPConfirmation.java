@@ -786,7 +786,7 @@ public class MTPConfirmation extends Fragment {
                                        myHolder.wdate.setText(model.getWORKDATE());
                                        myHolder.objective.setText(model.getOBJECTIVE());
                                        myHolder.jointwrk.setText(model.getJOINTWORKING());
-                                       myHolder.orgtown.setText(model.getORGTOWN());
+                                       //myHolder.orgtown.setText(model.getORGTOWN());
                                        if (model.getEditable().equalsIgnoreCase("Y")) {
                                            myHolder.operation.setVisibility(View.VISIBLE);
                                        } else {
@@ -848,7 +848,7 @@ public class MTPConfirmation extends Fragment {
                                    }
 
                                    class Holder extends RecyclerView.ViewHolder {
-                                       TextView objective, town, wdate, jointwrk, orgtown;
+                                       TextView objective, town, wdate, jointwrk;//, orgtown
                                        ImageButton delete, edit;
                                        LinearLayout operation;
 
@@ -859,7 +859,7 @@ public class MTPConfirmation extends Fragment {
                                            town = itemView.findViewById(R.id.town);
                                            wdate = itemView.findViewById(R.id.wdate);
                                            jointwrk = itemView.findViewById(R.id.jointwrk);
-                                           orgtown = itemView.findViewById(R.id.orgtown);
+                                          // orgtown = itemView.findViewById(R.id.orgtown);
                                            delete = itemView.findViewById(R.id.delete);
                                            edit = itemView.findViewById(R.id.edit);
                                        }
