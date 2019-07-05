@@ -341,14 +341,15 @@ public class DCREntry extends Fragment {
                 Global.dcrdatemonth = datespt[1];
                 Global.dcrdateyear = datespt[0];
                 dcrdate.setText("DCR DATE : " + Global.dcrdateday + "-" + Global.dcrdatemonth + "-" + Global.dcrdateyear);
-                arrayList1.remove(blcdcrdates.getSelectedItem().toString().trim());
                 for(int k=0; k < blcdate.size(); k++){
-                    if(blcdate.get(k).getDcrdate().equalsIgnoreCase(blcdcrdates.getSelectedItem().toString().trim())){
+                    if(blcdate.get(k).getDcrdate().equalsIgnoreCase(Global.dcrdate)){
                         Global.dcrno = blcdate.get(k).getDcrno();
+                        //Log.d("dcrno----->",Global.dcrno);
                         m1.setVisibility(View.VISIBLE);
                         remark.setText(blcdate.get(k).getDremark());
                     }
                 }
+                arrayList1.remove(blcdcrdates.getSelectedItem().toString().trim());
                 dialog.dismiss();
                 progressDialoge.show();
                 checkmtp();

@@ -994,7 +994,7 @@ public class MTPConfirmation extends Fragment {
         buttonupdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //todo save data
+
                 String[] date = workdate.split("/");
                 String newdate = date[2] + "-" + date[1] + "-" + date[0];
                 String selitem = townslist.getSelectedItem().toString().trim();
