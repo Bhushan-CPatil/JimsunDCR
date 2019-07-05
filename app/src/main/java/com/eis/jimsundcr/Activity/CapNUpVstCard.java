@@ -140,7 +140,6 @@ public class CapNUpVstCard extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.attach) {
-            //todo get image from gallary
             getImageFromGallery();
             return true;
         } else if (id == R.id.edit) {

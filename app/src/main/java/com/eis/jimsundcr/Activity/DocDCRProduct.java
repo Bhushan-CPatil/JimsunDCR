@@ -224,7 +224,7 @@ public class DocDCRProduct extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-                    //todo add confirmation box (yes/no type)
+
                     Gson gson = new GsonBuilder().create();
                     JsonArray myCustomArray = gson.toJsonTree(dcrprodlst).getAsJsonArray();
                     Toast.makeText(DocDCRProduct.this, myCustomArray.toString(), Toast.LENGTH_LONG).show();

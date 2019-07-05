@@ -120,7 +120,7 @@ public class DCREntry extends Fragment {
         l2.setVisibility(View.GONE);
         l3.setVisibility(View.GONE);
         getBlockedDCRDates();
-        //todo remove getdcrdate() from below and put it in getBlockedDCRDates()
+
         //getdcrdate();
 
         dd.setOnClickListener(new View.OnClickListener() {

@@ -243,7 +243,7 @@ public class DoctorsData extends AppCompatActivity {
                             Snackbar snackbar = Snackbar.make(sv, "Please select at list 1 name !", Snackbar.LENGTH_LONG);
                             snackbar.show();
                         } else {
-                            //todo notify dataset changed an visible it
+
                             dialog.dismiss();
                             nestedsv.setVisibility(View.VISIBLE);
                             jointwrklist.getAdapter().notifyDataSetChanged();
@@ -603,7 +603,7 @@ public class DoctorsData extends AppCompatActivity {
                 url = new URL(RetrofitClient.BASE_URL + "doctordataaddsel.php");
 
             } catch (MalformedURLException e) {
-                // TODO Auto-generated catch block
+
                 e.printStackTrace();
                 return "exception";
             }
@@ -647,7 +647,7 @@ public class DoctorsData extends AppCompatActivity {
                 conn.connect();
 
             } catch (IOException e1) {
-                // TODO Auto-generated catch block
+
                 e1.printStackTrace();
                 return "exception";
             }
