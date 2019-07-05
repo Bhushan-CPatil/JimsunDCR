@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:gravity="center"
-            android:text="KEEP IN TOUCH"
+            android:text="KEEP IN TOUCH JIMSUN"
             android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             android:textStyle="bold" />
