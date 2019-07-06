@@ -75,6 +75,7 @@ public class ChemistData extends AppCompatActivity {
     AppCompatCheckBox indchkbox;
     MaterialButton jointwrkbtn, chementry;
     RadioGroup rdgrp;
+    public boolean wrkarea = true;
     RecyclerView jointwrklist;
     public static RecyclerView chemistlist;
     ViewDialog progressDialoge;
@@ -330,6 +331,10 @@ public class ChemistData extends AppCompatActivity {
                     String value = arealist.get(i).getTCPID() + ":" + arealist.get(i).getWTYPE();
                     workingarea.put(key, value);*/
                 }
+
+                if(arrayList.size() <= 0){
+                    wrkarea = false;
+                }
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(ChemistData.this, android.R.layout.simple_spinner_item, arrayList);
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -438,7 +443,12 @@ public class ChemistData extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (seljntwrklst.size() > 0) {
-                    apicall2();
+                    if(wrkarea) {
+                        apicall2();
+                    }else{
+                        Snackbar snackbar = Snackbar.make(sv, "Area not selected or not present !", Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                    }
                 } else {
                     Snackbar snackbar = Snackbar.make(sv, "Please select independent or joint working !", Snackbar.LENGTH_LONG);
                     snackbar.show();

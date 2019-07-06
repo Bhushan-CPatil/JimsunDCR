@@ -74,6 +74,7 @@ public class DoctorsData extends AppCompatActivity {
     public static final int CONNECTION_TIMEOUT = 60000;
     public static final int READ_TIMEOUT = 90000;
     Spinner area;
+    public boolean wrkarea = true;
     AppCompatCheckBox indchkbox;
     MaterialButton jointwrkbtn, docentry;
     RadioGroup rdgrp;
@@ -265,7 +266,12 @@ public class DoctorsData extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (seljntwrklst.size() > 0) {
-                    apicall2();
+                    if(wrkarea) {
+                        apicall2();
+                    }else{
+                        Snackbar snackbar = Snackbar.make(sv, "Area not selected or not present !", Snackbar.LENGTH_LONG);
+                        snackbar.show();
+                    }
                 } else {
                     Snackbar snackbar = Snackbar.make(sv, "Please select independent or joint working !", Snackbar.LENGTH_LONG);
                     snackbar.show();
@@ -350,6 +356,10 @@ public class DoctorsData extends AppCompatActivity {
                     arrayList.add(key);
                     String value = arealist.get(i).getTCPID() + ":" + arealist.get(i).getWTYPE();
                     workingarea.put(key, value);*/
+                }
+
+                if(arrayList.size() <= 0){
+                    wrkarea = false;
                 }
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(DoctorsData.this, android.R.layout.simple_spinner_item, arrayList);
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
