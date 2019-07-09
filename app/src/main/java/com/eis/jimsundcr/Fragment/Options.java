@@ -78,7 +78,7 @@ public class Options extends Fragment {
         progressDialoge = new ViewDialog(getActivity());
         mTableLayout = view.findViewById(R.id.tableLayout);
         uploadcard = view.findViewById(R.id.uploadcard);
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
+        /*if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
             // Do something for lollipop and above versions
             //if (Global.ecode.equalsIgnoreCase("01349") || Global.ecode.equalsIgnoreCase("01511") || Global.ecode.equalsIgnoreCase("01723") || Global.ecode.equalsIgnoreCase("01809") || Global.ecode.equalsIgnoreCase("02042") || Global.ecode.equalsIgnoreCase("02712")) {
 
@@ -94,7 +94,7 @@ public class Options extends Fragment {
             uploadcard.setRippleColor(getActivity().getResources().getColorStateList(R.color.textcolorgray));
                // mtp.setRippleColor(getActivity().getResources().getColorStateList(R.color.textcolorgray));
             //}
-        }
+        }*/
         Global.whichmth = null;
         dcr.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,15 +118,15 @@ public class Options extends Fragment {
         uploadcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(getActivity(), HomeActivity.class);
+                Intent intent = new Intent(getActivity(), HomeActivity.class);
                 intent.putExtra("ecode", Global.ecode);
                 intent.putExtra("date", Global.date);
                 intent.putExtra("dbprefix", Global.dbprefix);
                 intent.putExtra("openfrag", "visitingcard");
                 Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getActivity(), R.anim.trans_left_in, R.anim.trans_left_out).toBundle();
                 startActivity(intent, bndlanimation);
-                getActivity().finish();*/
-                new Global().notAllowed(getActivity());
+                getActivity().finish();
+                //new Global().notAllowed(getActivity());
             }
         });
 

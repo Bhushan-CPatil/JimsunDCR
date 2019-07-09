@@ -142,8 +142,8 @@ public class HomeActivity extends AppCompatActivity
                 }*/
                 break;
             case R.id.nav_file_upload:
-                //fragment = new UploadVisitingCard();
-                new Global().notAllowed(HomeActivity.this);
+                fragment = new UploadVisitingCard();
+                //new Global().notAllowed(HomeActivity.this);
                 break;
             case R.id.nav_mtp:
                 //new Global().notAllowed(HomeActivity.this);
