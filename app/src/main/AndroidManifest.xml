@@ -21,12 +21,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.eis.jimsundcr.Activity.CheckDCRSummary"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.eis.jimsundcr.Activity.ChemDCRGift"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.eis.jimsundcr.Activity.DocDCRProduct"
-            android:screenOrientation="portrait"/>
+        <activity android:name="com.eis.jimsundcr.Activity.VisitPlanSummary"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.eis.jimsundcr.Activity.CheckDCRSummary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eis.jimsundcr.Activity.ChemDCRGift"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.eis.jimsundcr.Activity.DocDCRProduct"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.eis.jimsundcr.Activity.DocDCRGift"
             android:screenOrientation="portrait" />
