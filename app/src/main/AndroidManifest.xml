@@ -21,48 +21,50 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name="com.eis.jimsundcr.Activity.VisitPlanSummary"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Activity.Quiz"></activity>
         <activity
-            android:name="com.eis.jimsundcr.Activity.CheckDCRSummary"
+            android:name=".Activity.VisitPlanSummary"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.ChemDCRGift"
+            android:name=".Activity.CheckDCRSummary"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.DocDCRProduct"
+            android:name=".Activity.ChemDCRGift"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.DocDCRGift"
+            android:name=".Activity.DocDCRProduct"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.UploadActivity"
+            android:name=".Activity.DocDCRGift"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.CapNUpVstCard"
+            android:name=".Activity.UploadActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.Remarks"
+            android:name=".Activity.CapNUpVstCard"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.NonFieldWork"
+            android:name=".Activity.Remarks"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.ExpenseData"
+            android:name=".Activity.NonFieldWork"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.ChemistData"
+            android:name=".Activity.ExpenseData"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.DoctorsData"
+            android:name=".Activity.ChemistData"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.HomeActivity"
+            android:name=".Activity.DoctorsData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.SplashScreen"
+            android:name=".Activity.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,10 +73,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.eis.jimsundcr.Activity.LoginScreen"
+            android:name=".Activity.LoginScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.eis.jimsundcr.Activity.MainActivity"
+            android:name=".Activity.MainActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
